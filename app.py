@@ -37,33 +37,60 @@ base_template_start = '''
     <style>
         body {
             font-family: Arial, sans-serif;
+            update-colors
                 line-height: 1.6;
                 margin: 0;
                 padding: 20px;
                 max-width: 800px;
                 margin: 0 auto;
-                background-color: #f9f9f9; /* Add this line */
+                background-color: #f9f9f9; 
+
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+ main
         }
         header {
             margin-bottom: 20px;
             border-bottom: 1px solid #ddd;
             padding-bottom: 10px;
-            background-color: #4a6fa5; /* Add this line */
-            color: white; /* Add this line */
-            padding: 15px; /* Add this line */
+ update-colors
+            background-color: #4a6fa5; 
+            color: white; 
+            padding: 15px; 
+
+             background-color: #4a6fa5;  
+            color: white;  
+            padding: 15px; 
+   main
         }
         nav a {
             margin-right: 15px;
             text-decoration: none;
-            color: #e6f0ff; /* Change from #0066cc */
+   update-colors
+            color: #e6f0ff; 
         }
         .recipe-grid {
             border: 1px solid #ddd;
             border-radius: 5px;
             padding: 15px;
             ext-align: center;
-            background-color: #ffffff; /* Add this line */
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add this line */
+            background-color: #ffffff; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+            color: #e6f0ff;
+        }
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+             background-color: #ffffff;  
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);  
+    main
         }
         .recipe-card {
             border: 1px solid #ddd;
@@ -85,7 +112,11 @@ base_template_start = '''
             border-radius: 4px;
         }
         button {
-            background-color: #4a6fa5; /* Change from #0066cc */
+  update-colors
+            background-color: #4a6fa5;
+
+            background-color: #4a6fa5;
+  main
             color: white;
             border: none;
             padding: 10px 15px;
@@ -96,10 +127,12 @@ base_template_start = '''
 </head>
 <body>
     <header>
-        <h1>Recipe Collection</h1>
+        <h1>Recipe Cookbook</h1>
         <nav>
             <a href="{{ url_for('index') }}">Home</a>
             <a href="{{ url_for('add_recipe') }}">Add Recipe</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
         </nav>
     </header>
     
