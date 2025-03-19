@@ -1,4 +1,4 @@
-from flask import Flask, render_template_string, request, redirect, url_for
+from    flask import Flask, render_template_string, request, redirect, url_for
 import re
 
 # Initialize the Flask application
@@ -11,8 +11,14 @@ recipes = {
         "name": "Midnight Ramen",
         "ingredients": ["instant ramen", "egg", "green onions", "hot sauce"],
         "instructions": "1. Boil water\n2. Cook noodles\n3. Add toppings"
+    },
+    "quick-pbj": {
+        "name": "Quick PB&J",
+        "ingredients": ["bread", "peanut butter", "jelly"],
+        "instructions": "1. Spread peanut butter & jelly on slices\n2. Put them together"
     }
 }
+
 
 # HTML Templates as strings
 # Instead of using separate template files, this app uses template strings with Flask's render_template_string
