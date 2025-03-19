@@ -37,27 +37,33 @@ base_template_start = '''
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                max-width: 800px;
+                margin: 0 auto;
+                background-color: #f9f9f9; /* Add this line */
         }
         header {
             margin-bottom: 20px;
             border-bottom: 1px solid #ddd;
             padding-bottom: 10px;
+            background-color: #4a6fa5; /* Add this line */
+            color: white; /* Add this line */
+            padding: 15px; /* Add this line */
         }
         nav a {
             margin-right: 15px;
             text-decoration: none;
-            color: #0066cc;
+            color: #e6f0ff; /* Change from #0066cc */
         }
         .recipe-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            ext-align: center;
+            background-color: #ffffff; /* Add this line */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add this line */
         }
         .recipe-card {
             border: 1px solid #ddd;
@@ -79,7 +85,7 @@ base_template_start = '''
             border-radius: 4px;
         }
         button {
-            background-color: #0066cc;
+            background-color: #4a6fa5; /* Change from #0066cc */
             color: white;
             border: none;
             padding: 10px 15px;
