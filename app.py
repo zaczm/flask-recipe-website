@@ -42,22 +42,28 @@ base_template_start = '''
             padding: 20px;
             max-width: 800px;
             margin: 0 auto;
+            background-color: #f9f9f9;
         }
         header {
             margin-bottom: 20px;
             border-bottom: 1px solid #ddd;
             padding-bottom: 10px;
+             background-color: #4a6fa5;  
+            color: white;  
+            padding: 15px; 
         }
         nav a {
             margin-right: 15px;
             text-decoration: none;
-            color: #0066cc;
+            color: #e6f0ff;
         }
         .recipe-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 15px;
             margin-top: 20px;
+             background-color: #ffffff;  
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);  
         }
         .recipe-card {
             border: 1px solid #ddd;
@@ -79,7 +85,7 @@ base_template_start = '''
             border-radius: 4px;
         }
         button {
-            background-color: #0066cc;
+            background-color: #4a6fa5;
             color: white;
             border: none;
             padding: 10px 15px;
